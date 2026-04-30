@@ -1,25 +1,25 @@
 class BlackboxCli < Formula
   desc "Flight recorder for your dev day - passive git activity tracking"
   homepage "https://github.com/brentguistwite/blackbox"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.1/blackbox-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "5b3159868eb5d0b7e1b25ada546cb5661eada7741ea7d89f0dd2fc84505a148e"
+      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.2/blackbox-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ffac862f8586c13c8524cc0d249dec84d53ecf515ca37306828133d2c57d36c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.1/blackbox-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "e8b95e960a2eb177a8d6ca38e3b7d3d7c0e69df1b5fca54249b1bab5ddc7b6b5"
+      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.2/blackbox-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "cf8ad2c86b8caa568664b50be925007c675d2b2bd12d5b8f4ad42dfcad182a66"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.1/blackbox-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "32c02db274cc9f25092a30c71983f054a184f85d89b7f93d733a4783e22d4fb8"
+      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.2/blackbox-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "58d68c75a2a6d0b9d14e73e2a32b9b9387033b4d53b8636dc59248d35475aec3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.1/blackbox-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c5a8d894340887f0d8ff8975f1fb47cce66aa369522e2d33d2932934cbb10a62"
+      url "https://github.com/brentguistwite/blackbox/releases/download/v0.1.2/blackbox-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "933cf9ae09e0a4735922cb1ef4f2e410d75becad685eec74255190fbc9d5703e"
     end
   end
   license "MIT"
