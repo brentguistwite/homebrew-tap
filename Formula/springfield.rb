@@ -1,25 +1,25 @@
 class Springfield < Formula
   desc "Plugin-first local CLI for Springfield setup and workflow control"
   homepage "https://github.com/brentguistwite/springfield"
-  version "0.25.1"
+  version "0.25.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.1/springfield_0.25.1_darwin_arm64.tar.gz"
-      sha256 "ae891cd7d7d5ecc1c9c2a24528f84c6ae32cf0cbdc76a340322ec575dc53811f"
+      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.2/springfield_0.25.2_darwin_arm64.tar.gz"
+      sha256 "ef852ab650cc9ebef01cd45307fec22a6ba6afe5208c1a1b65b22cb649e0518e"
     else
-      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.1/springfield_0.25.1_darwin_amd64.tar.gz"
-      sha256 "31fd325d80764a60b170fb5479c326749a314b9006804f1d03fe2cde0a841c7f"
+      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.2/springfield_0.25.2_darwin_amd64.tar.gz"
+      sha256 "98a27d1f1e46db0f6914a1bf108645596eb3cdfd96ce9bb18fb2a68afd8cdc9f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.1/springfield_0.25.1_linux_arm64.tar.gz"
-      sha256 "6e2b6a6d917d1ca7af6e44534a5253380f8c18025891b596a8669d45eb6a34ae"
+      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.2/springfield_0.25.2_linux_arm64.tar.gz"
+      sha256 "6d6fc375f8eecdc5653fa1e2f6a691c4115cb844974f841262aac5df05992b52"
     else
-      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.1/springfield_0.25.1_linux_amd64.tar.gz"
-      sha256 "7a316e81e29df1631056abe208cafed979384105f2802f7c8810b30fb27d6195"
+      url "https://github.com/brentguistwite/springfield/releases/download/v0.25.2/springfield_0.25.2_linux_amd64.tar.gz"
+      sha256 "ae78a19aa79869fadfc5f35368b373b30f9e5789065c138b5c56543574e0beaf"
     end
   end
 
@@ -28,6 +28,6 @@ class Springfield < Formula
   end
 
   test do
-    assert_match "springfield v0.25.1", shell_output("#{bin}/springfield version")
+    assert_match "springfield v0.25.2", shell_output("#{bin}/springfield version")
   end
 end
